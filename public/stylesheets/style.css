@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+body {
+  font: 14px 'Oswald', sans-serif;
+}
+
 .articleDisplay {
   margin: 5em;
   display: grid;
@@ -8,6 +14,8 @@
   width: 250px;
   height: 300px;
   position: relative;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .articleContainer h1 {
@@ -31,6 +39,7 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.35;
+
   position: absolute;
   z-index: 1;
 }

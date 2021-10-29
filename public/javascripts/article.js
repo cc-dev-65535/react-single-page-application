@@ -15,8 +15,8 @@ class Article extends React.Component {
   componentDidMount() {
     this.fetchData();
     this.setState({
-      title: "Arknights",
-      company: "Yostar Hypergryph"
+      title: "ARKNIGHTS",
+      company: "YOSTAR HYPERGRYPH"
     });
   }
   /*
