@@ -1,10 +1,6 @@
 class Article extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      title: "",
-      company: ""
-    };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -13,11 +9,7 @@ class Article extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchData();
-    this.setState({
-      title: "ARKNIGHTS",
-      company: "YOSTAR HYPERGRYPH"
-    });
+    return;
   }
   /*
     renderInfoBox() {
@@ -35,10 +27,10 @@ class Article extends React.Component {
   render() {
     return /*#__PURE__*/React.createElement("div", {
       className: "articleContainer",
-      onClick: this.handleClick()
+      onClick: this.handleClick
     }, /*#__PURE__*/React.createElement("img", {
-      src: "/images/arknights.png"
-    }), /*#__PURE__*/React.createElement("h1", null, " ", this.state.title, " "), /*#__PURE__*/React.createElement("h2", null, " ", this.state.company, " "));
+      src: this.props.imageUrl
+    }), /*#__PURE__*/React.createElement("h1", null, " ", this.props.title, " "), /*#__PURE__*/React.createElement("h2", null, " ", this.props.company, " "));
   }
 
 }

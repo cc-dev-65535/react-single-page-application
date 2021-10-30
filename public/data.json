@@ -1,0 +1,15 @@
+{
+  "games":
+  [
+    {
+      "title": "ARKNIGHTS",
+      "company": "YOSTAR HYPERGRYPH",
+      "imageUrl": "/images/arknights.png"
+    },
+    {
+      "title": "ATELIER RORONA",
+      "company": "GUST",
+      "imageUrl": "/images/rorona.webp"
+    }
+  ]
+}

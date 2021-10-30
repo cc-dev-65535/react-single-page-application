@@ -1,2 +1,2 @@
-const articleNode = document.querySelector('.article');
-ReactDOM.render( /*#__PURE__*/React.createElement(Article, null), articleNode);
+const rootNode = document.querySelector('#root');
+ReactDOM.render( /*#__PURE__*/React.createElement(Display, null), rootNode);

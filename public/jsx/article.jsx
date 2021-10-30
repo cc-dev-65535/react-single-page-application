@@ -1,10 +1,6 @@
 class Article extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      title: "",
-      company: "",
-    };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -13,11 +9,7 @@ class Article extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchData();
-    this.setState({
-      title: "ARKNIGHTS",
-      company: "YOSTAR HYPERGRYPH"
-    });
+    return;
   }
 /*
   renderInfoBox() {
@@ -33,10 +25,10 @@ class Article extends React.Component {
 
   render() {
     return (
-      <div className="articleContainer" onClick={this.handleClick()}>
-        <img src="/images/arknights.png" />
-        <h1> {this.state.title} </h1>
-        <h2> {this.state.company} </h2>
+      <div className="articleContainer" onClick={this.handleClick}>
+        <img src={this.props.imageUrl} />
+        <h1> {this.props.title} </h1>
+        <h2> {this.props.company} </h2>
       </div>
     );
   }
