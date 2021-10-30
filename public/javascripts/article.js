@@ -1,36 +1,27 @@
 class Article extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.renderInfoBox = this.renderInfoBox.bind(this);
   }
 
-  fetchData() {
-    return;
-  }
-
-  componentDidMount() {
-    return;
-  }
-  /*
-    renderInfoBox() {
-      let infoBoxNode = document.createElement('div');
-      infoBoxNode.setAttribute('class','infobox');
-      ReactDOM.render(React.createElement(InfoBox), infoboxNode);
-    }*/
-
-
-  handleClick() {
-    //this.renderInfoBox();
-    return;
+  renderInfoBox() {
+    let infoBoxNode = document.querySelector('#infoBox');
+    ReactDOM.render( /*#__PURE__*/React.createElement(InfoBox, {
+      videoUrl: this.props.videoUrl
+    }), infoBoxNode);
   }
 
   render() {
-    return /*#__PURE__*/React.createElement("div", {
-      className: "articleContainer",
-      onClick: this.handleClick
+    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Tooltip, {
+      text: this.props.tooltipText
     }, /*#__PURE__*/React.createElement("img", {
-      src: this.props.imageUrl
-    }), /*#__PURE__*/React.createElement("h1", null, " ", this.props.title, " "), /*#__PURE__*/React.createElement("h2", null, " ", this.props.company, " "));
+      src: this.props.imageUrl,
+      onClick: this.renderInfoBox
+    })), /*#__PURE__*/React.createElement("span", {
+      className: "header"
+    }, " ", this.props.title, " "), /*#__PURE__*/React.createElement("span", {
+      className: "footer"
+    }, " ", this.props.company, " "));
   }
 
 }

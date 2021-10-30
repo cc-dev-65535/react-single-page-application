@@ -11,7 +11,6 @@ class Display extends React.Component {
   }
 
   async componentDidMount() {
-    // must await async func here
     let response = await fetch('/data.json');
     let data = await response.json();
     this.setState({
@@ -24,12 +23,9 @@ class Display extends React.Component {
       className: "articleDisplay"
     }, this.state.data.map((game, i) => {
       return /*#__PURE__*/React.createElement("div", {
+        className: "articleContainer",
         key: i
-      }, /*#__PURE__*/React.createElement(Article, {
-        title: game.title,
-        company: game.company,
-        imageUrl: game.imageUrl
-      }));
+      }, /*#__PURE__*/React.createElement(Article, game));
     }));
   }
 

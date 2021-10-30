@@ -4,12 +4,16 @@
     {
       "title": "ARKNIGHTS",
       "company": "YOSTAR HYPERGRYPH",
-      "imageUrl": "/images/arknights.png"
+      "imageUrl": "/images/arknights.png",
+      "videoUrl": "https://www.youtube.com/embed/KpowWcLRaNU?enablejsapi=1",
+      "tooltipText": "Release Date: August 2020 Genre: Tower Defence"
     },
     {
       "title": "ATELIER RORONA",
       "company": "GUST",
-      "imageUrl": "/images/rorona.webp"
+      "imageUrl": "/images/rorona.webp",
+      "videoUrl": "https://www.youtube.com/embed/KpowWcLRaNU?enablejsapi=1",
+      "tooltipText": "Release Date: August 2020 Genre: Adventure"
     }
   ]
 }

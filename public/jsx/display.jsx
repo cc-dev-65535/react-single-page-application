@@ -11,7 +11,6 @@ class Display extends React.Component {
   }
 
   async componentDidMount() {
-    // must await async func here
     let response = await fetch('/data.json');
     let data = await response.json();
     this.setState({
@@ -24,7 +23,9 @@ class Display extends React.Component {
     return (
       <div className="articleDisplay">
         {this.state.data.map((game, i) => {
-          return <div key={i}><Article title={game.title} company={game.company} imageUrl={game.imageUrl} /></div>
+          return <div className="articleContainer" key={i}>
+                      <Article {... game} />
+                </div>
         })}
       </div>
     );

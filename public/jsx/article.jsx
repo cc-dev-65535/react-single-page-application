@@ -1,34 +1,22 @@
 class Article extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.renderInfoBox = this.renderInfoBox.bind(this);
   }
 
-  fetchData() {
-    return;
-  }
-
-  componentDidMount() {
-    return;
-  }
-/*
   renderInfoBox() {
-    let infoBoxNode = document.createElement('div');
-    infoBoxNode.setAttribute('class','infobox');
-    ReactDOM.render(React.createElement(InfoBox), infoboxNode);
-  }*/
-
-  handleClick() {
-    //this.renderInfoBox();
-    return;
+    let infoBoxNode = document.querySelector('#infoBox');
+    ReactDOM.render(<InfoBox videoUrl={this.props.videoUrl} />, infoBoxNode);
   }
 
   render() {
     return (
-      <div className="articleContainer" onClick={this.handleClick}>
-        <img src={this.props.imageUrl} />
-        <h1> {this.props.title} </h1>
-        <h2> {this.props.company} </h2>
+      <div>
+        <Tooltip text={this.props.tooltipText}>
+          <img src={this.props.imageUrl} onClick={this.renderInfoBox}/>
+        </Tooltip>
+        <span className="header"> {this.props.title} </span>
+        <span className="footer"> {this.props.company} </span>
       </div>
     );
   }
