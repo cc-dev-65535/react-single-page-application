@@ -1,2 +1,2 @@
 const rootNode = document.querySelector('#root');
-ReactDOM.render(<Display />, rootNode);
+ReactDOM.render(<RootDisplay />, rootNode);

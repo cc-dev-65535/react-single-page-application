@@ -5,6 +5,13 @@ body {
   background-color: #222;
 }
 
+h1 {
+  font: 30px sans-serif;
+  color: red;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
 .articleDisplay {
   margin: 5em;
   display: grid;
@@ -73,20 +80,19 @@ body {
   bottom: -10;
 }
 
-#infoBox {
+.infoBox {
   background-color: #333333;
   position: fixed;
-  top: calc(50vh - 300px);
-  left: calc(50vw - 400px);
-  z-index: 10;
+  bottom: 0;
+  right: 0;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-#infoBox #player {
+.infoBox iframe {
 
 }
 
-#infoBox #closeButton {
+.infoBox button {
   padding: 3em;
 }

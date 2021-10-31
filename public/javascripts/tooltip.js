@@ -10,7 +10,7 @@ class Tooltip extends React.Component {
   toggle() {
     this.setState({
       display: !this.state.display
-    }); //console.log(this.state.display);
+    });
   }
 
   render() {
