@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     title= title
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -17,5 +17,8 @@ html
     script(src='/javascripts/rootdisplay.js' defer)
     script(src='/javascripts/mainscript.js' defer)
   body
-    block content
-    footer footer text here
+    nav.navbar.fixed-top.navbar-expand-md.navbar-light
+      a.navbar-brand#title(href='/') GAM3R
+    .container
+      block content
+      footer &copy; GAM3R
