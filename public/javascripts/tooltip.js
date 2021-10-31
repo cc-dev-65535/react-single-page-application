@@ -23,9 +23,12 @@ class Tooltip extends React.Component {
       onMouseEnter: this.toggle,
       onMouseOut: this.toggle
     }, this.props.children), /*#__PURE__*/React.createElement("div", {
-      className: "tooltipContent",
-      style: style
-    }, this.props.text));
+      className: "tooltip",
+      style: style,
+      role: "tooltip"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "tooltip-inner"
+    }, this.props.text)));
   }
 
 }

@@ -74,10 +74,8 @@ h1 {
   cursor: pointer;
 }
 
-.articleContainer .tooltipContent {
-  position: absolute;
-  color: red;
-  bottom: -10;
+.articleContainer .tooltip {
+  opacity: 1;
 }
 
 .infoBox {
@@ -90,9 +88,10 @@ h1 {
 }
 
 .infoBox iframe {
-
+ margin: 0.5em;
 }
 
 .infoBox button {
-  padding: 3em;
+  padding: 1em;
+  display: block;
 }

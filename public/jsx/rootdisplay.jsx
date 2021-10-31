@@ -22,14 +22,15 @@ class RootDisplay extends React.Component {
     return () => {
       this.setState({
         videoUrl: url,
-        videoDisplay: !this.state.videoDisplay
+        videoDisplay: true
       });
     }
   }
 
   displayVideoNoUrl() {
     this.setState({
-        videoDisplay: !this.state.videoDisplay
+        videoUrl: "",
+        videoDisplay: false
     });
   }
 

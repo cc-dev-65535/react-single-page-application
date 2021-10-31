@@ -7,8 +7,8 @@ class InfoBox extends React.Component {
 
     return (
       <div className="infoBox" style={style}>
+        <button type="button" className="btn-close" onClick={this.props.displayVideoHandler}></button>
         <iframe width="480" height="360" src={this.props.videoUrl} frameborder="0"></iframe>
-        <button onClick={this.props.displayVideoHandler}></button>
       </div>
     );
   }
