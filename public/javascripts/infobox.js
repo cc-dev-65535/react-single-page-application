@@ -5,7 +5,7 @@ class InfoBox extends React.Component {
       display: this.props.videoDisplay ? "" : "none"
     };
     return /*#__PURE__*/React.createElement("div", {
-      className: "infoBox col-12 col-sm-10 col-md-8 col-lg-6",
+      className: "infoBox col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5",
       style: style
     }, /*#__PURE__*/React.createElement("button", {
       type: "button",

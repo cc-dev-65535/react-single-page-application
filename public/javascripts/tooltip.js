@@ -8,9 +8,9 @@ class Tooltip extends React.Component {
   }
 
   toggle() {
-    this.setState({
-      display: !this.state.display
-    });
+    this.setState(state => ({
+      display: !state.display
+    }));
   }
 
   render() {
