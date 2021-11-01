@@ -19,12 +19,10 @@ class RootDisplay extends React.Component {
   }
 
   displayVideo(url) {
-    return () => {
-      this.setState({
-        videoUrl: url,
-        videoDisplay: true
-      });
-    }
+    this.setState({
+      videoUrl: url,
+      videoDisplay: true
+    });
   }
 
   displayVideoNoUrl() {
@@ -37,7 +35,8 @@ class RootDisplay extends React.Component {
   render() {
     return (
       <div>
-        <Display displayVideoHandler={this.displayVideo} games={this.state.data} />
+        <h1>Popular New Releases</h1>
+        <ArticleWrapper displayVideoHandler={this.displayVideo} games={this.state.data} />
         <InfoBox displayVideoHandler={this.displayVideoNoUrl} videoUrl={this.state.videoUrl} videoDisplay={this.state.videoDisplay} />
       </div>
     );

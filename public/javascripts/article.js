@@ -4,7 +4,9 @@ class Article extends React.Component {
       text: this.props.tooltipText
     }, /*#__PURE__*/React.createElement("img", {
       src: this.props.imageUrl,
-      onClick: this.props.displayVideoHandler(this.props.videoUrl)
+      onClick: () => {
+        this.props.displayVideoHandler(this.props.videoUrl);
+      }
     })), /*#__PURE__*/React.createElement("span", {
       className: "header"
     }, " ", this.props.title, " "), /*#__PURE__*/React.createElement("span", {

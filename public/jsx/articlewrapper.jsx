@@ -1,4 +1,4 @@
-class Display extends React.Component {
+class ArticleWrapper extends React.Component {
   render() {
     return (
       <div className="articleDisplay">

@@ -19,12 +19,10 @@ class RootDisplay extends React.Component {
   }
 
   displayVideo(url) {
-    return () => {
-      this.setState({
-        videoUrl: url,
-        videoDisplay: true
-      });
-    };
+    this.setState({
+      videoUrl: url,
+      videoDisplay: true
+    });
   }
 
   displayVideoNoUrl() {
@@ -35,7 +33,7 @@ class RootDisplay extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Display, {
+    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Popular New Releases"), /*#__PURE__*/React.createElement(ArticleWrapper, {
       displayVideoHandler: this.displayVideo,
       games: this.state.data
     }), /*#__PURE__*/React.createElement(InfoBox, {
