@@ -23,12 +23,17 @@ class Tooltip extends React.Component {
       onMouseEnter: this.toggle,
       onMouseOut: this.toggle
     }, this.props.children), /*#__PURE__*/React.createElement("div", {
-      className: "tooltip",
+      className: "popover",
       style: style,
       role: "tooltip"
-    }, /*#__PURE__*/React.createElement("div", {
-      className: "tooltip-inner"
-    }, this.props.text)));
+    }, /*#__PURE__*/React.createElement("h2", {
+      class: "popover-header"
+    }, this.props.title), /*#__PURE__*/React.createElement("div", {
+      className: "popover-body",
+      dangerouslySetInnerHTML: {
+        __html: this.props.text
+      }
+    })));
   }
 
 }

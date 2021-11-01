@@ -87,21 +87,19 @@ h1 {
   cursor: pointer;
 }
 
-.articleContainer .tooltip {
-  opacity: 1;
+.articleContainer .popover {
+  /*opacity: 1;*/
+  top: auto;
+  left: auto;
+  bottom: -190px;
 }
 
 .infoBox {
-  /*
-  background-color: #333333;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  border: 1px solid #000;
-  border-radius: 10px;
-  */
-  overflow: hidden;
   display: block;
+}
+
+.infoBox iframe {
+  max-width: 100%;
 }
 
 .modal-body {

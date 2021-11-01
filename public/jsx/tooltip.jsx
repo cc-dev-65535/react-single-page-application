@@ -23,9 +23,9 @@ class Tooltip extends React.Component {
         <div className="imageContainer" onMouseEnter={this.toggle} onMouseOut={this.toggle}>
           {this.props.children}
         </div>
-        <div className="tooltip" style={style} role="tooltip">
-            <div className="tooltip-inner">
-              {this.props.text}
+        <div className="popover" style={style} role="tooltip">
+          <h2 class="popover-header">{this.props.title}</h2>
+            <div className="popover-body" dangerouslySetInnerHTML={{__html: this.props.text}}>
             </div>
         </div>
       </div>
