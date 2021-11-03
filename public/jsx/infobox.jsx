@@ -13,7 +13,7 @@ class InfoBox extends React.Component {
               <button type="button" className="btn-close" aria-label="Close" onClick={this.props.displayVideoHandler}></button>
             </div>
             <div className="modal-body">
-              <iframe width="480" height="360" src={this.props.videoUrl} frameborder="0"></iframe>
+              <iframe width="480" height="360" src={this.props.videoUrl}></iframe>
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" onClick={this.props.displayVideoHandler}>Close</button>
