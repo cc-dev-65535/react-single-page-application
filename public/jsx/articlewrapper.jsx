@@ -1,3 +1,5 @@
+const Article = require('./article.jsx');
+
 class ArticleWrapper extends React.Component {
   render() {
     return (
@@ -11,3 +13,5 @@ class ArticleWrapper extends React.Component {
     );
   }
 }
+
+module.exports = ArticleWrapper;

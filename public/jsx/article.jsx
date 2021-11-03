@@ -1,3 +1,5 @@
+const Tooltip = require('./tooltip.jsx');
+
 class Article extends React.Component {
   render() {
     return (
@@ -11,3 +13,5 @@ class Article extends React.Component {
     );
   }
 }
+
+module.exports = Article;

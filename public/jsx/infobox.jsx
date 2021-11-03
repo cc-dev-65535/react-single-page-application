@@ -4,7 +4,7 @@ class InfoBox extends React.Component {
       zIndex: (this.props.videoDisplay) ? 10000 : 0,
       display: (this.props.videoDisplay) ? "" : "none"
     };
-    
+
     return (
       <div className="modal infoBox" tabindex="-1" style={style}>
         <div className="modal-dialog">
@@ -24,3 +24,5 @@ class InfoBox extends React.Component {
     );
   }
 }
+
+module.exports = InfoBox;

@@ -32,3 +32,5 @@ class Tooltip extends React.Component {
     );
   }
 }
+
+module.exports = Tooltip;

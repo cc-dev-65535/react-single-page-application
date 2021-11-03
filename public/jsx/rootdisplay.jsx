@@ -1,3 +1,6 @@
+const ArticleWrapper = require('./articlewrapper.jsx');
+const InfoBox = require('./infobox.jsx');
+
 class RootDisplay extends React.Component {
   constructor(props) {
     super(props);
@@ -42,3 +45,5 @@ class RootDisplay extends React.Component {
     );
   }
 }
+
+module.exports = RootDisplay;
