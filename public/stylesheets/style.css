@@ -25,6 +25,38 @@ h1 {
   border-right: 0;
 }
 
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font: 20px 'Oswald', sans-serif;
+}
+
+#sidebar ul {
+  margin-top: 70px;
+}
+
+#sidebar span {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  background-color: red;
+  text-align: center;
+}
+
+#sidebar span:hover {
+  cursor: pointer;
+}
+
+#sidebar .active {
+  background-color: blue;
+}
+
+#mainContent {
+  margin-left: 100px;
+}
+
 .articleDisplay {
   margin-top: 2em;
   margin-bottom: 4em;
@@ -105,4 +137,19 @@ h1 {
 
 .modal-body {
   padding: 0.5rem;
+}
+
+/* Media query for a responsive side bar */
+@media screen and (max-width: 600px) {
+  #sidebar {
+    position: static;
+  }
+
+  #sidebar .flex-column {
+    flex-direction: row !important;
+  }
+
+  #mainContent {
+    margin-left: 0;
+  }
 }

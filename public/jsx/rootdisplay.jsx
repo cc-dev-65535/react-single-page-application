@@ -37,10 +37,13 @@ class RootDisplay extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="mainContent">
         <h1>Popular New Releases</h1>
         <ArticleWrapper displayVideoHandler={this.displayVideo} games={this.state.data} />
         <InfoBox displayVideoHandler={this.displayVideoNoUrl} videoUrl={this.state.videoUrl} videoDisplay={this.state.videoDisplay} />
+        <br />
+        <br />
+        <footer> &copy; GAM3R </footer>
       </div>
     );
   }

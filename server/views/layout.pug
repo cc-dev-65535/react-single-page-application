@@ -15,8 +15,15 @@ html
   body
     nav.navbar.fixed-top.navbar-expand-md.navbar-light
       a.navbar-brand#title(href='/') GAM3R
+    div(id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark")
+      ul(class="nav nav-pills flex-column mb-auto")
+        li
+          span(class="active") JRPG
+        li
+          span SHOOTER
+        li
+          span MOBILE
+        li
+          span FIGHTING
     .container
       block content
-      br
-      br
-      footer &copy; GAM3R
