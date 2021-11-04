@@ -41,16 +41,19 @@ h1 {
   display: block;
   padding: 5px;
   margin: 10px;
-  background-color: red;
+  background-color: grey;
   text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 #sidebar span:hover {
   cursor: pointer;
+  background-color: #9146FF;
 }
 
 #sidebar .active {
-  background-color: blue;
+  background-color: #9146FF;
 }
 
 #mainContent {
