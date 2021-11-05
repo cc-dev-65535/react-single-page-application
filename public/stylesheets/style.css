@@ -45,6 +45,7 @@ h1 {
   text-align: center;
   border: 1px solid #000;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 #sidebar a:hover {

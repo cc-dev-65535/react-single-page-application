@@ -1,0 +1,19 @@
+{
+  "games":
+  [
+    {
+      "title": "ATELIER RORONA",
+      "company": "KOEI TECMO/GUST",
+      "imageUrl": "/images/rorona.webp",
+      "videoUrl": "https://www.youtube.com/embed/T0CHaeWfGcQ",
+      "tooltipText": "Release Date: August 2020<br>Genre: Adventure<br>Rating: <i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"far fa-star\"></i><br><br>Click For Trailer"
+    },
+    {
+      "title": "LABYRINTH OF REFRAIN: COVEN OF DUSK",
+      "company": "NISA/NIPPON ICHI",
+      "imageUrl": "/images/coven.jpg",
+      "videoUrl": "https://www.youtube.com/embed/_dFn3lsZ4w8",
+      "tooltipText": "Release Date: August 2020<br>Genre: Dungeon Crawler<br>Rating: <i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"far fa-star\"></i><br><br>Click For Trailer"
+    }
+  ]
+}

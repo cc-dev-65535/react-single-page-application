@@ -1,0 +1,12 @@
+{
+  "games":
+  [
+    {
+      "title": "STREET FIGHTER 5",
+      "company": "CAPCOM",
+      "imageUrl": "/images/sf.jpg",
+      "videoUrl": "https://www.youtube.com/embed/3l4mux-seHI",
+      "tooltipText": "Release Date: August 2020<br>Genre: Fighting<br>Rating: <i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"far fa-star\"></i><br><br>Click For Trailer"
+    }
+  ]
+}

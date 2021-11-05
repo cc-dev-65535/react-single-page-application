@@ -1,0 +1,12 @@
+{
+  "games":
+  [
+    {
+      "title": "ARKNIGHTS",
+      "company": "YOSTAR/HYPERGRYPH",
+      "imageUrl": "/images/arknights.png",
+      "videoUrl": "https://www.youtube.com/embed/rDyh6vbOItw",
+      "tooltipText": "Release Date: August 2020<br>Genre: Tower Defence<br>Rating: <i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"far fa-star\"></i><br><br>Click For Trailer"
+    }
+  ]
+}
