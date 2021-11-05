@@ -1,3 +1,5 @@
+const React = require('react');
+const ReactDOM = require('react-dom');
 const Tooltip = require('./tooltip.jsx');
 
 class Article extends React.Component {

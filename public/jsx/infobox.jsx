@@ -1,3 +1,6 @@
+const React = require('react');
+const ReactDOM = require('react-dom');
+
 class InfoBox extends React.Component {
   render() {
     let style = {
