@@ -3,13 +3,12 @@ const ReactDOM = require('react-dom');
 const Sidebar = require('./sidebar.jsx');
 const { Outlet } = require('react-router-dom');
 
-function Layout() {
+function Games() {
     return (
       <div>
-        <Sidebar />
         <Outlet />
       </div>
     );
 }
 
-module.exports = Layout;
+module.exports = Games;

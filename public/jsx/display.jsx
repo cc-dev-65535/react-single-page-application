@@ -4,7 +4,7 @@ const ArticleWrapper = require('./articlewrapper.jsx');
 const InfoBox = require('./infobox.jsx');
 const Sidebar = require('./sidebar.jsx');
 
-class RootDisplay extends React.Component {
+class Display extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,4 +43,4 @@ class RootDisplay extends React.Component {
   }
 }
 
-module.exports = RootDisplay;
+module.exports = Display;

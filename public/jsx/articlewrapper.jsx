@@ -9,9 +9,11 @@ function ArticleWrapper(props) {
   let url = `/${params.genre}data.json`;
   let [ data, setData ] = useState(null);
   let [ loading, setLoading ] = useState(true);
+  let [ error, setError ] = useState(false);
 
   useEffect(() => {
     setLoading(true);
+    setError(false);
     fetch(url)
     .then((response) => {
           return response.json();
@@ -19,10 +21,18 @@ function ArticleWrapper(props) {
     .then((gamedata) => {
           setData(gamedata);
           setLoading(false);
+    })
+    .catch((err) => {
+          setError(true)
+          setLoading(false);
     });
   }, [url]);
 
-  if (!loading) {
+  if (loading) {
+    return <p>LOADING...</p>
+  } else if (error) {
+    return <p>Error: No such game data exists</p>
+  } else {
     return (
       <div className="articleDisplay">
         {data.games.map((game, i) => {
@@ -32,8 +42,6 @@ function ArticleWrapper(props) {
         })}
       </div>
     );
-  } else {
-    return <p>LOADING...</p>
   }
 }
 

@@ -1,11 +1,11 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-function Home() {
+function Error() {
     return (
       <div id="mainContent">
-        <h1>Disclaimer</h1>
-        <p>This site is for educational purposes only</p>
+        <h1>Oops, Wrong Page</h1>
+        <p>Page does not exist</p>
         <br />
         <br />
         <footer> &copy; GAM3R </footer>
@@ -13,4 +13,4 @@ function Home() {
     );
 }
 
-module.exports = Home;
+module.exports = Error;
