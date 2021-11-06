@@ -29,17 +29,27 @@ function ArticleWrapper(props) {
   }, [url]);
 
   if (loading) {
-    return <p>LOADING...</p>
+    return (
+      <p>LOADING...</p>
+    );
   } else if (error) {
-    return <p>Error: No such game data exists</p>
+    return (
+      <div>
+        <h1>Error</h1>
+        <p>No such game data exists</p>
+      </div>
+    );
   } else {
     return (
-      <div className="articleDisplay">
-        {data.games.map((game, i) => {
-          return <div className="articleContainer" key={i}>
+      <div>
+        <h1>Popular New Releases</h1>
+        <div className="articleDisplay">
+          {data.games.map((game, i) => {
+            return <div className="articleContainer" key={i}>
                     <Article displayVideoHandler={props.displayVideoHandler} {... game} />
                     </div>
-        })}
+          })}
+        </div>
       </div>
     );
   }

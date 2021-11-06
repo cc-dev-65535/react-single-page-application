@@ -32,7 +32,6 @@ class Display extends React.Component {
   render() {
     return (
       <div id="mainContent">
-        <h1>Popular New Releases</h1>
         <ArticleWrapper displayVideoHandler={this.displayVideo} />
         <InfoBox displayVideoHandler={this.displayVideoNoUrl} videoUrl={this.state.videoUrl} videoDisplay={this.state.videoDisplay} />
         <br />
