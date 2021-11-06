@@ -30,7 +30,10 @@ function ArticleWrapper(props) {
 
   if (loading) {
     return (
-      <p>LOADING...</p>
+      <div>
+        <h1>Popular New Releases</h1>
+        <p>LOADING...</p>
+      </div>
     );
   } else if (error) {
     return (
