@@ -144,6 +144,10 @@ h1 {
   padding: 0.5rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Media query for a responsive side bar */
 @media screen and (max-width: 600px) {
   #sidebar {
