@@ -59,7 +59,7 @@ h1 {
 }
 
 #mainContent {
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .articleDisplay {
@@ -149,9 +149,12 @@ h1 {
 }
 
 /* Media query for a responsive side bar */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   #sidebar {
-    position: static;
+    position: fixed;
+    z-index: 6;
+    bottom: auto;
+    right: 0;
   }
 
   #sidebar .flex-column {
@@ -159,6 +162,7 @@ h1 {
   }
 
   #mainContent {
+    margin-top: 250px;
     margin-left: 0;
   }
 }
