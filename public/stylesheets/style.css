@@ -146,11 +146,11 @@ h1 {
 
 /* change default bootstrap modal behaviour */
 .modal-dialog {
-  max-width: 50vw;
+  max-width: 60vw;
 }
 
 .modal-body {
-  height: 50vh;
+  height: 60vh;
 }
 
 .hidden {
