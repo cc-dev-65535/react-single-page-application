@@ -144,15 +144,20 @@ h1 {
   max-width: 100%;
 }
 
+/* change default bootstrap modal behaviour */
+.modal-dialog {
+  max-width: 50vw;
+}
+
 .modal-body {
-  padding: 0.5rem;
+  height: 50vh;
 }
 
 .hidden {
   display: none;
 }
 
-/* Media query for a responsive side bar */
+/* Media query for a responsive side bar and modal */
 @media screen and (max-width: 650px) {
   #sidebar {
     position: fixed;
@@ -168,5 +173,9 @@ h1 {
   #mainContent {
     margin-top: 250px;
     margin-left: 0;
+  }
+
+  .modal-dialog {
+    max-width: 500px;
   }
 }
