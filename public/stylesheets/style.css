@@ -12,17 +12,17 @@ h1 {
   margin-top: 80px;
 }
 
-#title {
-  font: 30px 'Righteous', sans-serif;
-  color: white;
-}
-
 .navbar {
   background-color: #9146FF;
 }
 
 .navbar-brand {
   border-right: 0;
+}
+
+#title {
+  font: 30px 'Righteous', sans-serif;
+  color: white;
 }
 
 #sidebar {
@@ -62,24 +62,18 @@ h1 {
   margin-left: 200px;
 }
 
-.container {
-  max-width: 1800px;
-}
-
 .articleDisplay {
   margin-top: 2em;
   margin-bottom: 4em;
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
-  gap: 30px;
+  gap: 2em;
 }
 
 .articleContainer {
   width: 400px;
   height: 300px;
   position: relative;
-  /*border: 1px solid #000;
-  border-radius: 5px;*/
 }
 
 .articleContainer .header {
@@ -117,8 +111,6 @@ h1 {
   height: 100%;
   object-fit: fill;
   opacity: 0.50;
-  /*border: 1px solid #000;
-  border-radius: 5px;*/
 }
 
 .imageContainer img:hover {
@@ -157,7 +149,6 @@ h1 {
   display: none;
 }
 
-/* Media query for a responsive side bar and modal */
 @media screen and (max-width: 650px) {
   #sidebar {
     position: fixed;
@@ -171,8 +162,8 @@ h1 {
   }
 
   #mainContent {
+    margin-left: 20px;
     margin-top: 250px;
-    margin-left: 0;
   }
 
   .modal-dialog {
