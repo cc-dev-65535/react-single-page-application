@@ -22,12 +22,12 @@ class Tooltip extends React.Component {
       display: (this.state.display) ? "" : "none"
     };
     return (
-      <div>
+      <div style={{height: "100%"}}>
         <div className="imageContainer" onMouseEnter={this.toggle} onMouseOut={this.toggle}>
           {this.props.children}
         </div>
         <div className="popover" style={style} role="tooltip">
-          <h2 class="popover-header">{this.props.title}</h2>
+          <h2 className="popover-header">{this.props.title}</h2>
             <div className="popover-body" dangerouslySetInnerHTML={{__html: this.props.text}}>
             </div>
         </div>

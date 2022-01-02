@@ -19,7 +19,8 @@ class Article extends React.Component {
 
   render() {
     let style = {
-      display: (this.state.display) ? "" : "none"
+      display: (this.state.display) ? "" : "none",
+      height: "100%"
     };
     return (
       <div style={style}>
