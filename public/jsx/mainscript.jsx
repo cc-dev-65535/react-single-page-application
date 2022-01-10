@@ -6,6 +6,7 @@ const Layout = require('./layout.jsx');
 const Home = require('./home.jsx');
 const Games = require('./games.jsx');
 const Error = require('./error.jsx');
+require('../stylesheets/style.css');
 
 const rootNode = document.querySelector('#root');
 ReactDOM.render((
