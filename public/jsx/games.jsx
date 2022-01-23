@@ -5,7 +5,7 @@ const { Outlet } = require('react-router-dom');
 
 function Games() {
     return (
-      <div>
+      <div className="container-fluid">
         <Outlet />
       </div>
     );

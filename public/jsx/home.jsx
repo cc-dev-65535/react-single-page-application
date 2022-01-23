@@ -3,12 +3,12 @@ const ReactDOM = require('react-dom');
 
 function Home() {
     return (
-      <div id="mainContent">
-        <h1>Disclaimer</h1>
-        <p>This site is for educational purposes only</p>
-        <br />
-        <br />
-        <footer> &copy; GAM3R </footer>
+      <div className="container-fluid">
+        <div id="mainContent">
+          <h1>Disclaimer</h1>
+          <p>This site is for educational purposes only</p>
+          <footer> &copy; GAM3R </footer>
+        </div>
       </div>
     );
 }

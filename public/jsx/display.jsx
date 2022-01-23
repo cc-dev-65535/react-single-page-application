@@ -34,8 +34,6 @@ class Display extends React.Component {
       <div id="mainContent">
         <ArticleWrapper displayVideoHandler={this.displayVideo} />
         <InfoBox displayVideoHandler={this.displayVideoNoUrl} videoUrl={this.state.videoUrl} videoDisplay={this.state.videoDisplay} />
-        <br />
-        <br />
         <footer> &copy; GAM3R </footer>
       </div>
     );
