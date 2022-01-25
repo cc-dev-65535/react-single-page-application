@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Righteous&display=swap);
+body {
+  font: 14px 'Oswald', sans-serif;
+  background-color: #222;
+}
+
+h1 {
+  font: 32px 'Righteous', sans-serif;
+  color: white;
+  margin-top: 80px;
+}
+
+footer {
+  margin-top: 150px;
+}
+
+.navbar {
+  background-color: #9146FF;
+}
+
+.navbar-brand {
+  border-right: 0;
+}
+
+#title {
+  font: 30px 'Righteous', sans-serif;
+  color: white;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font: 20px 'Righteous', sans-serif;
+}
+
+#sidebar ul {
+  margin-top: 70px;
+}
+
+#sidebar a {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  background-color: grey;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#sidebar a:hover {
+  cursor: pointer;
+  background-color: #9146FF;
+}
+
+
+#sidebar .active {
+  background-color: #9146FF;
+}
+
+#mainContent {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleDisplay {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articleContainer {
+  width: calc(400px * 0.9);
+  height: calc(300px * 0.9);
+  position: relative;
+  margin: 10px;
+  flex: 0 1 auto;
+}
+
+.articleContainer .header {
+  font-size: 35px;
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.articleContainer .header:hover {
+  display: none;
+}
+
+.articleContainer .footer {
+  font-size: 22px;
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.articleContainer .footer:hover {
+  display: none;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0.50;
+  border: 2px solid #dee2e6;
+}
+
+.imageContainer img:hover {
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.articleContainer .popover {
+  /*opacity: 1;*/
+  top: auto;
+  left: auto;
+  max-width: none;
+  bottom: -190px;
+}
+
+.infoBox {
+  display: block;
+}
+
+.infoBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* change default bootstrap modal behaviour */
+.modal-dialog {
+  max-width: 60vw;
+}
+
+.modal-body {
+  padding: 0;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media screen and (max-width: 767.98px) {
+  #sidebar {
+    position: static;
+    /*
+    z-index: 6;
+    bottom: auto;
+    right: 0;
+    */
+  }
+
+  h1 {
+    margin-top: 10px;
+  }
+
+  .articleContainer {
+    margin-bottom: 20px;
+  }
+
+  #sidebar .flex-column {
+    flex-direction: row !important;
+  }
+
+  #mainContent {
+    margin-left: 10px;
+  }
+
+  .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .articleContainer {
+    width: 400px;
+    height: 300px;
+  }
+}
+
