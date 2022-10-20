@@ -6,7 +6,7 @@ Video game catalogue website designed using React components.
 
 ## Details
 * Designed as a single page application(SPA)
-* Uses bootstrap for front-end styling
+* Uses bootstrap for UI styling
 * Uses webpack for minifying and bundling
 * Uses the React Router library for client-side URL routing
 * Hosted using AWS elastic beanstalk
