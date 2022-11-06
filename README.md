@@ -2,7 +2,7 @@
 Video game catalogue website designed using React framework.  
 
 [Website Link](https://whispering-coast-68461.herokuapp.com)  
-[Git Repo](https://github.com/grepsedawkcat/react_spa)  
+[Git Repo](https://github.com/collinc1212/react_spa)  
 
 ## Details
 * Designed as a single page application(SPA)
